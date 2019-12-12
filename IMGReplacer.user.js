@@ -28,7 +28,7 @@ function refreshall(){
         allImages[i].src = url;\
     }\
 }\
-function setvar(newurl){url = newurl; refreshall();}";
+function setvar(newurl){if (newurl!=''){url = newurl;} refreshall();}";
     document.body.appendChild(script);
     var URLI = document.createElement("input");
     URLI.setAttribute("type", "text");
